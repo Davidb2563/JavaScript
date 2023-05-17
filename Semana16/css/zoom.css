@@ -1,0 +1,54 @@
+* {
+box-sizing: border-box;
+}
+.img-zoom-container {
+position: relative;
+}
+p{
+font-weight: bold;
+font-size: 15px;
+}
+.img-zoom-lens {
+position: absolute;
+border: 1px solid #d4d4d4;
+background-color: transparent;
+/*Parametros de tamaño del lente:*/
+width: 100px;
+height: 100px;
+}
+.img-zoom-result {
+border: 1px solid #d4d4d4;
+float: right;
+width: 700px;
+height: 500px;
+}
+/*Estilos Star rating*/
+#form {
+width: 250px;
+margin: 0 auto;
+height: 100px;
+}
+#form p {
+position: relative;
+left: -150%;
+}
+#form label {
+font-size: 30px;
+}
+input[type="radio"] {
+display: none;
+}
+label {
+color: grey;
+}
+.clasificacion {
+direction: rtl;
+unicode-bidi: bidi-override;
+}
+label:hover,
+label:hover ~ label {
+color: orange;
+}
+input[type="radio"]:checked ~ label {
+color: orange;
+}

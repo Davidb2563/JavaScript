@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imagenes Con Zoom</title>
+    <link rel="stylesheet" href="../css/zoom.css">
+    <script src="../js/zoom.js"></script>
+</head>
+<body>
+<h1>TIENDA MI PC.COM</h1>
+<h2>PORTAFOLIO DE TIENDA ONLINE</h2>
+<!-- CONTENEDOR PARA IMAGEN E IMAGEN AUMENTADA-->
+<div id="container">
+<div class="img-zoom-container">
+<img id="myimage" src="../img/portatiles4.jpg" width="400" height="340">
+<div id="myresult" class="img-zoom-result"></div>
+</div>
+<!-- Se coloca datos de imagen a mostrar con lupa aumentada-->
+<div class="text-img">
+<p>Computador Portátil Gamer ACER 15.6" Pulgadas 5799 - Intel Core i5 - RAM 8GB - Disco HDD 1 TB - Negro</p>
+<p>Código: 4710886287698</p>
+<p><del>$4.599.000</del> Antes--- $3.099.000 Hoy</p>
+</div>
+<!-- SECCION DE RATING STARS -->
+<p style="text-align:center;">Valora este producto calificando estas estrellas</p>
+<form id="form">
+<p class="clasificacion">
+<input id="radio1" type="radio" name="estrellas" value="5"><label for="radio1">★</label>
+<input id="radio2" type="radio" name="estrellas" value="4"><label for="radio2">★</label>
+<input id="radio3" type="radio" name="estrellas" value="3"><label for="radio3">★</label>
+<input id="radio4" type="radio" name="estrellas" value="2"><label for="radio4">★</label>
+<input id="radio5" type="radio" name="estrellas" value="1"><label for="radio5">★</label>
+</p>
+</form>
+</div>
+<script>
+// EJECUCION DE FUNCION ZOOM IMAGEN:
+imageZoom("myimage", "myresult");
+</script>
+</body>
+</html>
